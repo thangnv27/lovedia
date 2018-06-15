@@ -1,0 +1,89 @@
+/*----------------------------
+    The file upload form
+-----------------------------*/
+#upload{
+    font-family:'Roboto Condensed', sans-serif;
+}
+.wrap-file{
+    background: #fafafa; overflow: hidden;
+    border-top: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea; 
+}
+#drop{
+    width: 650px; margin: 23px auto;
+    padding: 50px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:16px;
+    font-weight:bold;
+    color:#7f858a;
+    border: 2px dashed #cccccc;
+}
+#drop.drag-over{
+    border: 2px dashed #009966;
+}
+#drop a{
+    background: url("../images/photo_drop.png") no-repeat center center;
+    padding:50px 325px;
+    color:#cccccc;
+    font: 18px "Roboto Condensed";
+    cursor: pointer;
+}
+#drop a.drag-over{
+    background: url("../images/photo_drop_hover.png") no-repeat center center;
+}
+#drop input{display:none;}
+
+#upload ul{
+    list-style:none;
+    margin:0; padding: 0;
+}
+#upload ul li{
+    height: 70px;
+    position: relative;
+}
+
+#upload ul li input{display: none;}
+
+#upload ul li p{
+    overflow: hidden;
+    white-space: nowrap;
+    color: #bebebe;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    margin: 0;
+}
+
+#upload ul li i{
+    font-weight: normal;
+    font-style:normal;
+    color:#7f7f7f;
+    display:block;
+}
+
+#upload ul li canvas{
+    top: 15px;
+    left: 32px;
+    position: absolute;
+}
+
+#upload ul li span{
+    width: 15px;
+    height: 12px;
+    background: url('../images/icons.png') no-repeat;
+    position: absolute;
+    top: 34px;
+    right: 33px;
+    cursor:pointer;
+}
+
+#upload ul li.working span{
+    height: 16px;
+    background-position: 0 -12px;
+}
+
+#upload ul li.error p{
+    color:red;
+}
